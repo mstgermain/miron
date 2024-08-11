@@ -1,2 +1,6 @@
-# miron
-Modélisation pour l'Interopérabilité, le Repérage et la réutilisatiON de données du patrimoine culturel québécois
+# MIRON - **M**odélisation pour l'**I**nteropérabilité, le **R**epérage et la réutilisati**ON** de données du patrimoine culturel québécois
+
+Version 0.1
+
+Date de création: 2024/08/11
+
