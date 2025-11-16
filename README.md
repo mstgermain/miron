@@ -1,10 +1,11 @@
 # MIRON - **M**odélisation pour l'**I**nteropérabilité, le **R**epérage et la réutilisati**ON** de données du patrimoine culturel québécois
 
-Version 0.1
+Version 1.1.0
 
 Date de création: 2024/08/11
 
-Date de modification: 2024/12/23
+Date de modification: 2025/11/16
+
 Licence: CC BY 4.0
 
 ## Description
