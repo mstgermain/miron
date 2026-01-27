@@ -4,8 +4,12 @@ Version 1.1.0
 
 Date de création: 2024/08/11
 
+<<<<<<< Updated upstream
 Date de modification: 2025/11/16
 
+=======
+Date de modification: 2026/01/26
+>>>>>>> Stashed changes
 Licence: CC BY 4.0
 
 ## Description
