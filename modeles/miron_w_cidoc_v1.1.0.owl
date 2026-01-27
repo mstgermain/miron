@@ -16,7 +16,7 @@
                                               <http://purl.org/dc/terms/creator> "https://orcid.org/0000-0001-7426-1690"^^xsd:anyURI ,
                                                                                  "Marielle St-Germain" ;
                                               <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
-                                              <http://purl.org/dc/terms/modified> "2026/01/26" ;
+                                              <http://purl.org/dc/terms/modified> "2026/01/27" ;
                                               <http://purl.org/dc/terms/title> "MIRON - Modélisation pour l'Interopérabilité, le Repérage et la réutilisatiON de données du patrimoine culturel québécois"@fr ;
                                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "miron" ;
                                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://stgermain.ebsi.umontreal.ca/miron/" ;
@@ -757,15 +757,11 @@ miron:CAT004_3 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/CAT004_4
 miron:CAT004_4 rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( miron:CAT004_4
-                                                          [ rdf:type owl:Restriction ;
-                                                            owl:onProperty miron:permetDeServir ;
-                                                            owl:someValuesFrom miron:MIR0271
-                                                          ]
-                                                        ) ;
-                                     rdf:type owl:Class
-                                   ] ;
-               rdfs:subClassOf miron:CAT004 ;
+               rdfs:subClassOf miron:CAT004 ,
+                               [ rdf:type owl:Restriction ;
+                                 owl:onProperty miron:permetDeServir ;
+                                 owl:someValuesFrom miron:MIR0271
+                               ] ;
                <http://purl.org/dc/terms/source> "https://nomenclature.info/nom/4867" ,
                                                  "https://www.musees.qc.ca/fr/professionnel/guidesel/doccoll/fr/classificationethno/classificationethnodefinition.htm#souscat4_14" ;
                rdfs:comment "objet pour le traitement des matériaux créé pour la présentation, le service ou la consommation des aliments ou des boissons destinés à la consommation humaine"@fr ;
@@ -778,7 +774,7 @@ miron:CAT004_4 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/CAT004_5
 miron:CAT004_5 rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( miron:CAT004_5
+               owl:equivalentClass [ owl:intersectionOf ( miron:CAT004
                                                           [ rdf:type owl:Restriction ;
                                                             owl:onProperty miron:traitementPatient ;
                                                             owl:someValuesFrom miron:MIR0271
@@ -800,7 +796,7 @@ miron:CAT004_5 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/CAT004_6
 miron:CAT004_6 rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( miron:CAT004_6
+               owl:equivalentClass [ owl:intersectionOf ( miron:CAT004
                                                           [ rdf:type owl:Restriction ;
                                                             owl:onProperty miron:traitementPatient ;
                                                             owl:allValuesFrom miron:MIR0197
@@ -823,7 +819,7 @@ miron:CAT004_6 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/CAT004_7
 miron:CAT004_7 rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( miron:CAT004_7
+               owl:equivalentClass [ owl:intersectionOf ( miron:CAT004
                                                           [ rdf:type owl:Restriction ;
                                                             owl:onProperty miron:traitementPatient ;
                                                             owl:allValuesFrom miron:MIR0083
@@ -845,7 +841,7 @@ miron:CAT004_7 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/CAT004_8
 miron:CAT004_8 rdf:type owl:Class ;
-               owl:equivalentClass [ owl:intersectionOf ( miron:CAT004_8
+               owl:equivalentClass [ owl:intersectionOf ( miron:CAT004
                                                           [ rdf:type owl:Restriction ;
                                                             owl:onProperty miron:traitementPatient ;
                                                             owl:allValuesFrom miron:MIR0082
@@ -2489,7 +2485,7 @@ miron:MIR0031 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0032
 miron:MIR0032 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0032
+              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0149
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty miron:produitMateriau ;
                                                            owl:someValuesFrom miron:MIR0136
@@ -2641,7 +2637,7 @@ miron:MIR0037 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0038
 miron:MIR0038 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0038
+              owl:equivalentClass [ owl:intersectionOf ( miron:CAT007_11
                                                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty miron:accessoireObjet ;
                                                                                   owl:allValuesFrom miron:MIR0163
@@ -2849,7 +2845,7 @@ miron:MIR0047 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0048
 miron:MIR0048 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0048
+              owl:equivalentClass [ owl:intersectionOf ( miron:CAT008_313
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty miron:produitMateriau ;
                                                            owl:allValuesFrom miron:MIR0082
@@ -2949,7 +2945,7 @@ miron:MIR0050 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0052
 miron:MIR0052 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0052
+              owl:equivalentClass [ owl:intersectionOf ( miron:CAT004_4
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty miron:objetElement ;
                                                            owl:hasValue <https://stgermain.ebsi.umontreal.ca/miron/objet/952bf3c3_3caa_43c0_a72d_a2df4b39de0f>
@@ -3401,7 +3397,7 @@ miron:MIR0071 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0072
 miron:MIR0072 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0072
+              owl:equivalentClass [ owl:intersectionOf ( miron:CAT004_8
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty miron:produitMateriau ;
                                                            owl:allValuesFrom miron:MIR0082
@@ -3501,15 +3497,11 @@ miron:MIR0083 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0085
 miron:MIR0085 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0085
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty miron:materiauComposeMateriauComposant ;
-                                                           owl:someValuesFrom miron:MIR0229
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
-                                  ] ;
-              rdfs:subClassOf miron:MIR0257 ;
+              rdfs:subClassOf miron:MIR0257 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty miron:produitMateriau ;
+                                owl:someValuesFrom miron:MIR0229
+                              ] ;
               <http://purl.org/dc/terms/source> "https://terminology.collectionstrust.org.uk/British-Museum-materials/mathesp.htm#1431" ,
                                                 "https://usito.usherbrooke.ca/d%C3%A9finitions/papier" ,
                                                 "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/2093118/papier" ;
@@ -3641,9 +3633,9 @@ miron:MIR0118 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0121
 miron:MIR0121 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0121
+              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0129
                                                          [ rdf:type owl:Restriction ;
-                                                           owl:onProperty miron:materiauComposeMateriauComposant ;
+                                                           owl:onProperty miron:produitMateriau ;
                                                            owl:someValuesFrom [ rdf:type owl:Class ;
                                                                                 owl:oneOf ( <https://stgermain.ebsi.umontreal.ca/miron/materiau/8eecd701_4628_480e_bac4_a6c5d492146a>
                                                                                           )
@@ -3676,15 +3668,11 @@ miron:MIR0122 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0126
 miron:MIR0126 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0126
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty miron:materiauComposeMateriauComposant ;
-                                                           owl:hasValue <https://stgermain.ebsi.umontreal.ca/miron/materiau/a7244508_ce48_4c34_8ad6_ea6775f10bd3>
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
-                                  ] ;
-              rdfs:subClassOf miron:MIR0233 ;
+              rdfs:subClassOf miron:MIR0233 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty miron:produitMateriau ;
+                                owl:hasValue <https://stgermain.ebsi.umontreal.ca/miron/materiau/a7244508_ce48_4c34_8ad6_ea6775f10bd3>
+                              ] ;
               <http://purl.org/dc/terms/source> "http://vocab.getty.edu/page/aat/300010797" ,
                                                 "https://terminology.collectionstrust.org.uk/British-Museum-materials/mathesg.htm#823" ,
                                                 "https://usito.usherbrooke.ca/d%C3%A9finitions/verre" ,
@@ -3696,15 +3684,11 @@ miron:MIR0126 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0129
 miron:MIR0129 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0129
-                                                         [ rdf:type owl:Restriction ;
-                                                           owl:onProperty miron:resultatProcedeOuTechnique ;
-                                                           owl:someValuesFrom miron:ConstructionTextile
-                                                         ]
-                                                       ) ;
-                                    rdf:type owl:Class
-                                  ] ;
-              rdfs:subClassOf miron:MIR0257 ;
+              rdfs:subClassOf miron:MIR0257 ,
+                              [ rdf:type owl:Restriction ;
+                                owl:onProperty miron:resultatProcedeOuTechnique ;
+                                owl:someValuesFrom miron:ConstructionTextile
+                              ] ;
               <http://purl.org/dc/terms/source> "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8367489/etoffe"@fr ;
               rdfs:comment "fibre tissée, tricotée, en feutre, aiguilletée ou réalisée selon tout autre mode de production"@fr ;
               rdfs:label "Étoffe"@fr ;
@@ -3913,7 +3897,7 @@ miron:MIR0170 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0171
 miron:MIR0171 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0171
+              owl:equivalentClass [ owl:intersectionOf ( miron:CAT009_4
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty miron:objetManipulation ;
                                                            owl:allValuesFrom miron:MIR0030
@@ -4094,9 +4078,9 @@ miron:MIR0204 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0206
 miron:MIR0206 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0206
+              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0129
                                                          [ rdf:type owl:Restriction ;
-                                                           owl:onProperty miron:materiauComposeMateriauComposant ;
+                                                           owl:onProperty miron:produitMateriau ;
                                                            owl:someValuesFrom miron:MIR0136
                                                          ]
                                                        ) ;
@@ -4110,10 +4094,10 @@ miron:MIR0206 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0207
 miron:MIR0207 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0207
+              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0121
                                                          [ rdf:type owl:Restriction ;
-                                                           owl:onProperty miron:materiauComposeMateriauComposant ;
-                                                           owl:someValuesFrom miron:MIR0133
+                                                           owl:onProperty miron:produitMateriau ;
+                                                           owl:allValuesFrom miron:MIR0133
                                                          ]
                                                        ) ;
                                     rdf:type owl:Class
@@ -4126,7 +4110,7 @@ miron:MIR0207 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0216
 miron:MIR0216 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0216
+              owl:equivalentClass [ owl:intersectionOf ( miron:CAT006_41
                                                          [ rdf:type owl:Class ;
                                                            owl:unionOf ( [ rdf:type owl:Restriction ;
                                                                            owl:onProperty miron:produitMateriau ;
@@ -4159,7 +4143,7 @@ miron:MIR0216 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0221
 miron:MIR0221 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0221
+              owl:equivalentClass [ owl:intersectionOf ( miron:CAT006_7
                                                          [ rdf:type owl:Restriction ;
                                                            owl:onProperty miron:objetElement ;
                                                            owl:qualifiedCardinality "2"^^xsd:nonNegativeInteger ;
@@ -4181,7 +4165,7 @@ miron:MIR0221 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0222
 miron:MIR0222 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0222
+              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0082
                                                          [ owl:intersectionOf ( [ rdf:type owl:Restriction ;
                                                                                   owl:onProperty miron:produitMateriau ;
                                                                                   owl:allValuesFrom miron:MIR0082
@@ -4286,9 +4270,9 @@ miron:MIR0233 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0234
 miron:MIR0234 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0234
+              owl:equivalentClass [ owl:intersectionOf ( <http://www.cidoc-crm.org/cidoc-crm/E57_Material>
                                                          [ rdf:type owl:Restriction ;
-                                                           owl:onProperty miron:materiauComposeMateriauComposant ;
+                                                           owl:onProperty miron:produitMateriau ;
                                                            owl:hasValue <https://stgermain.ebsi.umontreal.ca/miron/materiau/f4e40103_2809_47fa_974c_3aaa1ceffba2>
                                                          ]
                                                        ) ;
@@ -4381,9 +4365,9 @@ miron:MIR0256 rdf:type owl:Class ;
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/MIR0257
 miron:MIR0257 rdf:type owl:Class ;
-              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0257
+              owl:equivalentClass [ owl:intersectionOf ( miron:MIR0272
                                                          [ rdf:type owl:Restriction ;
-                                                           owl:onProperty miron:materiauComposeMateriauComposant ;
+                                                           owl:onProperty miron:produitMateriau ;
                                                            owl:someValuesFrom miron:MIR0197
                                                          ]
                                                        ) ;
@@ -5322,9 +5306,9 @@ miron:TYP003_12 rdf:type owl:Class ;
 ###  https://stgermain.ebsi.umontreal.ca/miron/materiau/41d5ccad_6628_4f17_b749_255d3f47ea43
 <https://stgermain.ebsi.umontreal.ca/miron/materiau/41d5ccad_6628_4f17_b749_255d3f47ea43> rdf:type owl:NamedIndividual ,
                                                                                                    miron:MIR0233 ;
+                                                                                          <http://www.cidoc-crm.org/cidoc-crm/P103_was_intended_for> <https://stgermain.ebsi.umontreal.ca/miron/activite/95c407d0_188e_436b_8070_c3678eb34ff2> ;
                                                                                           <http://www.w3.org/2004/02/skos/core#broader> <https://stgermain.ebsi.umontreal.ca/miron/materiau/1c628e24_6201_40e5_b571_474b08d0996a> ;
                                                                                           <http://purl.org/dc/terms/source> "https://fr.wikipedia.org/wiki/Eau_b%C3%A9nite" ;
-                                                                                          <http://www.cidoc-crm.org/cidoc-crm/P103_was_intended_for> <https://stgermain.ebsi.umontreal.ca/miron/activite/95c407d0_188e_436b_8070_c3678eb34ff2> ;
                                                                                           rdfs:label "eau baptismale"@fr ;
                                                                                           <http://www.w3.org/2004/02/skos/core#definition> "eau bénite servant à l'administration du baptême"@fr ;
                                                                                           <http://www.w3.org/2004/02/skos/core#prefLabel> "eau baptismale"@fr .
@@ -6202,10 +6186,10 @@ miron:TYP003_12 rdf:type owl:Class ;
                                                                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "broderie"@fr .
 
 
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
 ] .
 
-[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################
