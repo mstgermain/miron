@@ -1660,7 +1660,7 @@ miron:COMP001_1 rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( miron:COMP001
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty miron:elementObjet ;
-                                                             owl:someValuesFrom miron:CAT002_4
+                                                             owl:allValuesFrom miron:CAT002_4
                                                            ]
                                                          ) ;
                                       rdf:type owl:Class
@@ -1676,7 +1676,7 @@ miron:COMP001_2 rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( miron:COMP001
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty miron:elementObjet ;
-                                                             owl:someValuesFrom miron:CAT005_7
+                                                             owl:allValuesFrom miron:CAT005_7
                                                            ]
                                                          ) ;
                                       rdf:type owl:Class
@@ -1700,7 +1700,7 @@ miron:COMP001_4 rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( miron:COMP001
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty miron:elementObjet ;
-                                                             owl:someValuesFrom miron:CAT006_4
+                                                             owl:allValuesFrom miron:CAT006_4
                                                            ]
                                                          ) ;
                                       rdf:type owl:Class
@@ -1716,7 +1716,7 @@ miron:COMP001_5 rdf:type owl:Class ;
                 owl:equivalentClass [ owl:intersectionOf ( miron:COMP001
                                                            [ rdf:type owl:Restriction ;
                                                              owl:onProperty miron:elementObjet ;
-                                                             owl:someValuesFrom miron:CAT003_3
+                                                             owl:allValuesFrom miron:CAT003_3
                                                            ]
                                                          ) ;
                                       rdf:type owl:Class
