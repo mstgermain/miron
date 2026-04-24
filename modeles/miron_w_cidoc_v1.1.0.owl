@@ -16,7 +16,7 @@
                                               <http://purl.org/dc/terms/creator> "https://orcid.org/0000-0001-7426-1690"^^xsd:anyURI ,
                                                                                  "Marielle St-Germain" ;
                                               <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
-                                              <http://purl.org/dc/terms/modified> "2026/01/27" ;
+                                              <http://purl.org/dc/terms/modified> "2026/04/23" ;
                                               <http://purl.org/dc/terms/title> "MIRON - Modélisation pour l'Interopérabilité, le Repérage et la réutilisatiON de données du patrimoine culturel québécois"@fr ;
                                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "miron" ;
                                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://stgermain.ebsi.umontreal.ca/miron/" ;
@@ -6187,10 +6187,10 @@ miron:TYP003_12 rdf:type owl:Class ;
                                                                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "broderie"@fr .
 
 
-[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
 ] .
 
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
+[ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################
