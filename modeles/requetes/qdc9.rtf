@@ -5,12 +5,11 @@
 \margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
 
-\f0\fs24 \cf0 ## QDC1. Quel est le type d'objet (la cat\'e9gorie) de l'objet x o\'f9 ?x est l\'92objet x?\
-PREFIX rdf: <http://wwww.w3.org/1999/02/22-rdf-syntax-ns#>\
+\f0\fs24 \cf0 ## QDC9. Quel support compose g\'e9n\'e9ralement un type d\'92objet x o\'f9 ?x est l\'92objet x?\
 PREFIX miron: <https://stgermain.ebsi.umontreal.ca/miron/>\
 \
-SELECT ?categorie\
+SELECT DISTINCT ?support\
 WHERE\
 \{\
-    ?x a ?categorie . \
+	?x miron:produitSupport ?support .\
 \}}
