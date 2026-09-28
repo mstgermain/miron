@@ -9,19 +9,19 @@
 @base <https://stgermain.ebsi.umontreal.ca/miron/> .
 
 <https://stgermain.ebsi.umontreal.ca/miron/> rdf:type owl:Ontology ;
-                                              owl:versionIRI <https://stgermain.ebsi.umontreal.ca/miron/1.1.1> ;
+                                              owl:versionIRI <https://stgermain.ebsi.umontreal.ca/miron/1.1.0> ;
                                               owl:imports <http://www.cidoc-crm.org/cidoc-crm/> ,
                                                           <http://www.w3.org/2004/02/skos/core> ;
                                               <http://purl.org/dc/terms/created> "2024/11/08" ;
                                               <http://purl.org/dc/terms/creator> "https://orcid.org/0000-0001-7426-1690"^^xsd:anyURI ,
                                                                                  "Marielle St-Germain" ;
                                               <http://purl.org/dc/terms/license> "https://creativecommons.org/licenses/by/4.0/" ;
-                                              <http://purl.org/dc/terms/modified> "2026/09/28" ;
+                                              <http://purl.org/dc/terms/modified> "2026/04/23" ;
                                               <http://purl.org/dc/terms/title> "MIRON - Modélisation pour l'Interopérabilité, le Repérage et la réutilisatiON de données du patrimoine culturel québécois"@fr ;
                                               <http://purl.org/vocab/vann/preferredNamespacePrefix> "miron" ;
                                               <http://purl.org/vocab/vann/preferredNamespaceUri> "https://stgermain.ebsi.umontreal.ca/miron/" ;
                                               owl:priorVersion "1.0.0" ;
-                                              owl:versionInfo "1.1.1" .
+                                              owl:versionInfo "1.1.0" .
 
 #################################################################
 #    Annotation properties
@@ -1816,14 +1816,12 @@ miron:MIR0002 rdf:type owl:Class ;
                               ] ,
                               [ rdf:type owl:Restriction ;
                                 owl:onProperty miron:resultatProcedeOuTechnique ;
-                                owl:someValuesFrom miron:Impression
+                                owl:allValuesFrom miron:Impression
                               ] ;
-              <http://purl.org/dc/terms/modified> 20260928 ;
               <http://purl.org/dc/terms/source> "https://usito.usherbrooke.ca/d%C3%A9finitions/affiche" ,
                                                 "https://www.cnrtl.fr/definition/affiche" ;
               rdfs:comment "support publicitaire constitué d'une feuille de papier imprimée destinée à être placardée sur un mur ou un emplacement public réservé, et servant à donner à un large public une information de nature officielle ou publicitaire"@fr ;
               rdfs:label "Affiche"@fr ;
-              <http://www.w3.org/2004/02/skos/core#changeNote> "Modification des contraintes à la suite de la correction suivante après nouvelle révision : la relation d'activité « impression » est une caractéristique accidentelle et non pas essentielle du concept." ;
               <http://www.w3.org/2004/02/skos/core#prefLabel> "affiche"@fr .
 
 
@@ -5280,6 +5278,29 @@ miron:fd38382d_7787_4fb9_b48b_a1f3009de975 rdf:type owl:NamedIndividual ,
                                            <http://www.w3.org/2004/02/skos/core#prefLabel> "pied"@fr .
 
 
+###  https://stgermain.ebsi.umontreal.ca/miron/5dd15b0b_3430_4fb1_bfa1_3ab3dd746c64
+<https://stgermain.ebsi.umontreal.ca/miron/5dd15b0b_3430_4fb1_bfa1_3ab3dd746c64> rdf:type owl:NamedIndividual ,
+                                                                                           <http://www.cidoc-crm.org/cidoc-crm/E74_Group> ;
+                                                                                  <http://purl.org/dc/terms/source> "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8359729/raquetteur" ;
+                                                                                  rdfs:label "club de raquetteurs"@fr ;
+                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "regroupement de sportifs pratiquant la raquette à neige"@fr ;
+                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "club de raquetteurs"@fr .
+
+
+###  https://stgermain.ebsi.umontreal.ca/miron/59647c50_5e6e_4588_83b4_f347b8f7e300
+<https://stgermain.ebsi.umontreal.ca/miron/59647c50_5e6e_4588_83b4_f347b8f7e300> rdf:type owl:NamedIndividual ,
+                                                                                           miron:AdditionAssemblage ;
+                                                                                  <http://www.w3.org/2004/02/skos/core#broader> miron:dae255b0_1433_48f8_baf4_df8ef97b04b6 ;
+                                                                                  <http://purl.org/dc/terms/source> "https://usito.usherbrooke.ca/d%C3%A9finitions/tisser" ,
+                                                                                                                    "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17045404/tisser" ,
+                                                                                                                    "https://www.cnrtl.fr/definition/tisser" ;
+                                                                                  rdfs:label "tisser"@fr ;
+                                                                                  <http://www.w3.org/2004/02/skos/core#altLabel> "tissage"@fr ;
+                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "entrecroiser des fils ou des fibres textiles longitudinaux avec des fils ou des fibres textiles transversaux de manière à en faire une nappe solide unie ou à relief qu'on appelle tissu, une tapisserie ou pour réaliser le dessin d'un tissu"@fr ;
+                                                                                  <http://www.w3.org/2004/02/skos/core#hiddenLabel> "tissé"@fr ;
+                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "tisser"@fr .
+
+
 ###  https://stgermain.ebsi.umontreal.ca/miron/0a2e01a7_4430_44f5_ac54_7f096a40e2dc
 <https://stgermain.ebsi.umontreal.ca/miron/0a2e01a7_4430_44f5_ac54_7f096a40e2dc> rdf:type owl:NamedIndividual ,
                                                                                           miron:COMP001_5 ;
@@ -5498,13 +5519,6 @@ miron:fd38382d_7787_4fb9_b48b_a1f3009de975 rdf:type owl:NamedIndividual ,
                                                                                  rdfs:label "mors"@fr ;
                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "mâchoire d'un étau, de tenailles, de pinces, etc."@fr ;
                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "mors"@fr .
-
-
-###  https://stgermain.ebsi.umontreal.ca/miron/2f58c783_5243_45d0_a535_37ae211d35a7
-<https://stgermain.ebsi.umontreal.ca/miron/2f58c783_5243_45d0_a535_37ae211d35a7> rdf:type owl:NamedIndividual ,
-                                                                                          miron:MIR0176 ;
-                                                                                 rdfs:label "tête de flèche"@fr ;
-                                                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "tête de flèche"@fr .
 
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/2fb51bce_d1bc_46c5_9a56_5145d3f9df6e
@@ -5761,15 +5775,6 @@ miron:fd38382d_7787_4fb9_b48b_a1f3009de975 rdf:type owl:NamedIndividual ,
                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "ver à soie"@fr .
 
 
-###  https://stgermain.ebsi.umontreal.ca/miron/5dd15b0b_3430_4fb1_bfa1_3ab3dd746c64
-<https://stgermain.ebsi.umontreal.ca/miron/5dd15b0b_3430_4fb1_bfa1_3ab3dd746c64> rdf:type owl:NamedIndividual ,
-                                                                                          <http://www.cidoc-crm.org/cidoc-crm/E74_Group> ;
-                                                                                 <http://purl.org/dc/terms/source> "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/8359729/raquetteur" ;
-                                                                                 rdfs:label "club de raquetteurs"@fr ;
-                                                                                 <http://www.w3.org/2004/02/skos/core#definition> "regroupement de sportifs pratiquant la raquette à neige"@fr ;
-                                                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "club de raquetteurs"@fr .
-
-
 ###  https://stgermain.ebsi.umontreal.ca/miron/5e0015e0_1a6c_4dec_9626_a8b00df96aa9
 <https://stgermain.ebsi.umontreal.ca/miron/5e0015e0_1a6c_4dec_9626_a8b00df96aa9> rdf:type owl:NamedIndividual ,
                                                                                           <http://www.cidoc-crm.org/cidoc-crm/E21_Person> ;
@@ -5799,20 +5804,6 @@ miron:fd38382d_7787_4fb9_b48b_a1f3009de975 rdf:type owl:NamedIndividual ,
                                                                                  rdfs:label "boucle"@fr ;
                                                                                  <http://www.w3.org/2004/02/skos/core#definition> "anneau ou rectangle généralement métallique, muni d'un ou de plusieurs ardillons et fixé à l'extrémité d'une ceinture ou d'une courroie pour en régler le serrage"@fr ;
                                                                                  <http://www.w3.org/2004/02/skos/core#prefLabel> "boucle"@fr .
-
-
-###  https://stgermain.ebsi.umontreal.ca/miron/59647c50_5e6e_4588_83b4_f347b8f7e300
-<https://stgermain.ebsi.umontreal.ca/miron/59647c50_5e6e_4588_83b4_f347b8f7e300> rdf:type owl:NamedIndividual ,
-                                                                                          miron:AdditionAssemblage ;
-                                                                                 <http://www.w3.org/2004/02/skos/core#broader> miron:dae255b0_1433_48f8_baf4_df8ef97b04b6 ;
-                                                                                 <http://purl.org/dc/terms/source> "https://usito.usherbrooke.ca/d%C3%A9finitions/tisser" ,
-                                                                                                                   "https://vitrinelinguistique.oqlf.gouv.qc.ca/fiche-gdt/fiche/17045404/tisser" ,
-                                                                                                                   "https://www.cnrtl.fr/definition/tisser" ;
-                                                                                 rdfs:label "tisser"@fr ;
-                                                                                 <http://www.w3.org/2004/02/skos/core#altLabel> "tissage"@fr ;
-                                                                                 <http://www.w3.org/2004/02/skos/core#definition> "entrecroiser des fils ou des fibres textiles longitudinaux avec des fils ou des fibres textiles transversaux de manière à en faire une nappe solide unie ou à relief qu'on appelle tissu, une tapisserie ou pour réaliser le dessin d'un tissu"@fr ;
-                                                                                 <http://www.w3.org/2004/02/skos/core#hiddenLabel> "tissé"@fr ;
-                                                                                 <http://www.w3.org/2004/02/skos/core#prefLabel> "tisser"@fr .
 
 
 ###  https://stgermain.ebsi.umontreal.ca/miron/6b6dcfc9_63d8_4454_8b76_eea6152db070
@@ -6183,10 +6174,17 @@ miron:fd38382d_7787_4fb9_b48b_a1f3009de975 rdf:type owl:NamedIndividual ,
                                                                                          <http://www.w3.org/2004/02/skos/core#prefLabel> "système solaire"@fr .
 
 
-[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
-] .
+###  https://stgermain.ebsi.umontreal.ca/miron/2f58c783_5243_45d0_a535_37ae211d35a7
+<https://stgermain.ebsi.umontreal.ca/miron/2f58c783_5243_45d0_a535_37ae211d35a7> rdf:type owl:NamedIndividual ,
+                                                                                                miron:MIR0176 ;
+                                                                                       rdfs:label "tête de flèche"@fr ;
+                                                                                       <http://www.w3.org/2004/02/skos/core#prefLabel> "tête de flèche"@fr .
+
 
 [ owl:minQualifiedCardinality "2"^^xsd:nonNegativeInteger
+] .
+
+[ owl:minQualifiedCardinality "1"^^xsd:nonNegativeInteger
  ] .
 
 #################################################################
